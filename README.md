@@ -3,7 +3,7 @@
 ## 安装
 
 ```bash
-npm install drag-lib
+npm install @wuyuchentr/drag-lib
 ```
 
 ## 使用
