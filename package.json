@@ -1,6 +1,6 @@
 {
   "name": "drag-lib",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A native JS library that turns elements into draggable.",
   "main": "drag-lib.js",
   "scripts": {
