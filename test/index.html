@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test drag-lib</title>
+    <script src="../drag-lib.js"></script>
+    <style>
+        html {
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .drag-box {
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            border-radius: 5px;
+        }
+
+        .drag-box p {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            text-align: center;
+            font-size: 22px;
+            line-height: 30px;
+        }
+
+        .result {
+            position: absolute;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is the test of drag-lib</h1>
+
+
+    <div class="drag-box">
+        <p>
+            I`m darggable
+            <br>
+            Drag me!
+        </p>
+    </div>
+
+    <p class="result"></p>
+    
+    <script>
+        const result = document.querySelector('.result');
+
+        const drag = new Drag({
+            el: document.querySelector('.drag-box'),
+            onDrag: (e) => {
+                result.innerText = `dragging  x: ${e.clientX}, y: ${e.clientY}`;
+            },
+            onDragStart: () => {
+                result.innerText = 'drag start';
+            },
+            onDragEnd: () => {
+                result.innerText = 'drag end';
+            }
+        })
+    </script>
+</body>
+</html>
