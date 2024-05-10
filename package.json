@@ -1,0 +1,22 @@
+{
+  "name": "drag-lib",
+  "version": "1.0.0",
+  "description": "A native JS library that turns elements into draggable.",
+  "main": "drag-lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuiw/drag-lib.git"
+  },
+  "keywords": [
+    "drag"
+  ],
+  "author": "wuyuchen",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/zuiw/drag-lib/issues"
+  },
+  "homepage": "https://github.com/zuiw/drag-lib#readme"
+}
