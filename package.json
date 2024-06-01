@@ -1,6 +1,6 @@
 {
-  "name": "drag-lib",
-  "version": "1.0.2",
+  "name": "@wuyuchentr/drag-lib",
+  "version": "1.4.3",
   "description": "A native JS library that turns elements into draggable.",
   "main": "drag-lib.js",
   "scripts": {
@@ -11,7 +11,15 @@
     "url": "git+https://github.com/zuiw/drag-lib.git"
   },
   "keywords": [
-    "drag"
+    "drag",
+	"draggable",
+	"drag-lib",
+	"drag-and-drop",
+	"drag-and-drop-lib",
+	"drag-and-drop-library",
+	"drag-and-drop-js",
+	"Javascript",
+	"native-Javascript"
   ],
   "author": "wuyuchen",
   "license": "Apache-2.0",

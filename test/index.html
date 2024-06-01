@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test drag-lib</title>
-    <script src="../drag-lib.js"></script>
     <style>
         html {
             overflow: hidden;
@@ -39,6 +39,7 @@
         }
     </style>
 </head>
+
 <body>
     <h1>This is the test of drag-lib</h1>
 
@@ -52,12 +53,20 @@
     </div>
 
     <p class="result"></p>
-    
-    <script>
+
+    <script type="module">
+        import Drag from '../drag-lib.js'
+
         const result = document.querySelector('.result');
 
         const drag = new Drag({
             el: document.querySelector('.drag-box'),
+            restrictions: {
+                x: 0,
+                y: 0,
+                width: 1000,
+                height: 1000
+            },
             onDrag: (e) => {
                 result.innerText = `dragging  x: ${e.clientX}, y: ${e.clientY}`;
             },
@@ -68,6 +77,12 @@
                 result.innerText = 'drag end';
             }
         })
+
+		setTimeout(() => {
+			drag.makeUndraggable();
+			result.innerText = 'make un-draggable';
+		}, 5000);
     </script>
 </body>
+
 </html>

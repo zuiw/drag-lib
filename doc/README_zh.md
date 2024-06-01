@@ -1,6 +1,6 @@
 # 这是我自己用原生JS开发的一个拖拽库
 
-[English](./README_en.md) | [简体中文](./README.md)
+[English](./README_en.md) | [简体中文](./README_zh.md)
 
 ## 安装
 
@@ -39,6 +39,10 @@ setTimeout(() => {
 
 ## API
 
+## API
+
+### 选项
+
 ### 选项
 
 | 名字 | 类型 | 描述 |
@@ -58,3 +62,4 @@ setTimeout(() => {
 | position | 得到可拖拽元素的位置 |
 | setPosition | 设置可拖拽元素的位置 |
 | setOptions | 设置选项 |
+
